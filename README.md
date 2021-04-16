@@ -62,7 +62,9 @@ Using fewer than 300 images per class, my production model achieved an accuracy 
 
 In this project, I built numerous convolutional neural networks to predict multiple food classes for image data. While there were certainly many roadblocks that affected the scope of the project, such as computing power and a small dataset, I managed to develop a production model that could handily beat the null model on validation accuracy and gained insight into model performance and architecture. With more time and resources, the project can be expanded to achieve more useful applications. Regardless, this was a fun introduction to convolutional neural networks for image processing.
 
-**Next Steps:** If expanded, this project can adopt multiple practical applications.
+**Next Steps:** 
+
+If expanded, this project can adopt multiple practical applications.
 
 If one were interested in the ability to convert images to text or a recommender system, the project could become somewhat of a reverse Google Images. In the context of this project, the user would provide the model with an image of ANY food in existence, and the model would accurately predict the name of the food and provide a recipe that details the ingredients and steps for preparing the food. This would be a useful tool for anyone trying a new dish or cuisine or people with specific dietary restrictions. If taken even further, the project could perform a similar function for any image object and provide a recommendation based on the prediction.
 
