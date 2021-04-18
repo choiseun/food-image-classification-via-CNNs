@@ -1,4 +1,4 @@
-# Recipe Recommender System
+# Multiclass Food Image Classification with Convolutional Neural Networks
 
 ---
 
@@ -6,11 +6,11 @@
 
 **Technology** Python, Jupyter Notebook, GitHub, Git
 
-**Python Libraries:** Pandas, requests, time, urllib, sys, os, tensorflow (keras), scikit-learn, numpy, matplotlib
+**Python Libraries:** Pandas, requests, time, urllib, sys, os, numpy, tensorflow, keras, scikit-learn, matplotlib
 
-**Technical Skills:** Multiclass classification, data collection, data cleaning, scraping web API, deep learning, convolutional neural networks, image processing, computer vision, transfer learning, pre-trained model, confusion matrix, image data augmentation
+**Technical Skills:** Multiclass classification, data collection, data cleaning, scraping web API, image processing, pre-processing, modeling, data visualization, exploratory data analysis (EDA), computer vision, deep learning, convolutional neural networks, neural network architecture, image data augmentation, accuracy, precision, recall, confusion matrix, pre-trained model, transfer learning, bias-variance tradeoff
 
-**Models:** Convolutional neural network, ResNet50, EfficientNet
+**Models:** Convolutional neural network, ResNet50, EfficientNet-B0
 
 ---
 
@@ -27,14 +27,13 @@ This project will cover the following:
 
 ### Problem Statement
 
-In this project, I intend on taking images of food, building a convolutional neural network (CNN) for image classification, and then recommending a generic recipe that details the ingredients and steps for preparing the dish.
+In this project, I intend on building a convolutional neural network (CNN) to classify food images.
 
 In this project, I hope to accomplish the following objectives:
-- Collect and clean at least 200 images per food class for 5 classes using the pushshift.io Reddit API,
-- Build a convolutional neural network from scratch to predict multiclass food classes with accuracy, precision, and recall scores that beat those of the null model, and
-- Recommend a recipe based on the predicted food class so that the user can understand the basic ingredients and process of food preparation required to make the dish.
+- Collect and clean at least 200 images per food class for 5 classes using the pushshift.io Reddit API, and
+- Build convolutional neural networks from scratch and pre-trained, state of the art models to predict multiclass food classes with accuracy scores higher than that of the null model.
 
-For this multiclass classification problem, I aim to predict the following 5 dishes:
+For this multiclass classification problem, I aim to predict the following 5 classes:
 1. Hamburger
 2. Hot dog
 3. Pizza
@@ -48,13 +47,13 @@ I will be using the following subreddits to collect image data:
 - r/tacos (47.7k members)
 - r/sushi (226k members)
 
-The general workflow is as follows: image data --> multiclass outcome --> recipe.
+The general workflow is as follows: image data --> multiclass outcome.
 
 ---
 
 ### Executive Summary
 
-Using fewer than 300 images per class, my production model achieved an accuracy of 54.93% on unseen data for a multiclass image classification problem. Altogether, the convolutional neural network made from scratch had 15 layers (including the input and output layers) and utilized image data augmentation to enhance its performance. The model performed the best when predicting pizza and performed the worst when predicting tacos when the image was actually a hotdog. I also implemented IBM's pre-trained ResNet50 model in a transfer learning environment, but the model did not achieve a higher validation accuracy than the production model in the designated 20 epochs.
+Using fewer than 300 images per class, my production model achieved an accuracy of 64.78% on unseen data for a multiclass image classification problem. The convolutional neural network made from Google's pre-trained EfficientNet-B0 model utilized image data augmentation to enhance its performance. The model performed the best when predicting pizza and sushi and performed the worst at predicting hotdogs and tacos. I also implemented IBM's pre-trained ResNet50 model in a transfer learning environment, but the model failed to achieve a higher validation accuracy than the production model in the designated 25 epochs.
 
 ---
 
@@ -66,9 +65,11 @@ In this project, I built numerous convolutional neural networks to predict multi
 
 If expanded, this project can adopt multiple practical applications.
 
-If one were interested in the ability to convert images to text or a recommender system, the project could become somewhat of a reverse Google Images. In the context of this project, the user would provide the model with an image of ANY food in existence, and the model would accurately predict the name of the food and provide a recipe that details the ingredients and steps for preparing the food. This would be a useful tool for anyone trying a new dish or cuisine or people with specific dietary restrictions. If taken even further, the project could perform a similar function for any image object and provide a recommendation based on the prediction.
+If one were interested in a recipe recommender system, the user would provide the model with an image of ANY food in existence, and the model would accurately predict the name of the food and provide a generic recipe that details the ingredients and steps for preparing the food. This would be a useful tool for anyone trying a new dish/cuisine or people with specific dietary restrictions. 
 
-Another potential application would be to create a dinner recommendation system. Based on the user's preference for a similar or dissimilar food class, the user would pass in a food image, and the recommender system would suggest options for dinner that resemble or differ from the input.
+If taken even further, the project could perform a similar function for any image object and provide a prediction for an unidentified object. This would be extremely helpful for those who are visually impaired.
+
+A third potential application would be to create a dinner recommender system. Based on the user's preference for a similar or dissimilar food class, the user would pass in a food image, and the recommender system would suggest options for dinner that resemble or differ to a specified degree from the provided image.
 
 ---
 
