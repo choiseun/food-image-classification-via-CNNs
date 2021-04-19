@@ -53,7 +53,7 @@ The general workflow is as follows: image data --> multiclass outcome.
 
 ### Executive Summary
 
-Using fewer than 300 images per class, my production model achieved an accuracy of 64.78% on unseen data for a multiclass image classification problem. The convolutional neural network made from Google's pre-trained EfficientNet-B0 model utilized image data augmentation to enhance its performance. The model performed the best when predicting pizza and sushi and performed the worst at predicting hotdogs and tacos. I also implemented IBM's pre-trained ResNet50 model in a transfer learning environment, but the model failed to achieve a higher validation accuracy than the production model in the designated 25 epochs.
+Using fewer than 300 images per class, my production model achieved an accuracy of 64.78% on unseen data for a multiclass image classification problem. The convolutional neural network made from Google's pre-trained EfficientNet-B0 model utilized image data augmentation to enhance its performance. The model performed the best when predicting pizza and sushi and performed the worst at predicting sushi. I also implemented IBM's pre-trained ResNet50 model in a transfer learning environment, but the model failed to achieve a higher validation accuracy than the production model in the designated 25 epochs.
 
 ---
 
