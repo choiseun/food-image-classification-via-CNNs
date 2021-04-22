@@ -1,4 +1,4 @@
-# Multiclass Food Image Classification with Convolutional Neural Networks
+# Food Image Classification via CNNs
 
 ---
 
