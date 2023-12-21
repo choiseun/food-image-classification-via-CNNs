@@ -1,10 +1,13 @@
-# Food Image Classification via CNNs
-
----
+## Food Image Classification via CNNs
 
 ### Technology & Skills
 
-**Technology** Python, Jupyter Notebook, GitHub, Git
+**Technology** 
+
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 **Python Libraries:** Pandas, requests, time, urllib, sys, os, numpy, tensorflow, keras, scikit-learn, matplotlib
 
